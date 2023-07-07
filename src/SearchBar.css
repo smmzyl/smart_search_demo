@@ -1,0 +1,112 @@
+.search-bar {
+  user-select: none;
+  position: relative;
+  max-width: 500px;
+  width: 60vw;
+  display: block;
+  margin: 40px auto;
+}
+
+.logo {
+  user-select: none;
+  display: block;
+  margin: 15px auto 10px;
+  width: 100px;
+}
+
+.search-input-container {
+  position: relative;
+}
+
+.search-input {
+  height: 45px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  outline: none;
+  width: 100.7%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.search-input:focus {
+  border: 2px solid #7a1ea1;
+  cursor: pointer;
+}
+
+.clear-button {
+  position: absolute;
+  top: 85%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  color: #ccc;
+  cursor: pointer;
+  outline: none;
+}
+
+.clear-button:hover {
+  color: #7A1EA1;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #fff;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  outline: none;
+  font-size: 0;
+  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);*/
+  z-index: 1;
+  border: 2px solid #7A1EA1;
+  border-top: none;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -ms-border-radius: 0px 0px 10px 10px;
+  -o-border-radius: 0px 0px 10px 10px;
+}
+
+.suggestions-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.suggestions-dropdown li.selected {
+  background-color: #f2f2f2;
+}
+
+.search-bar.open .search-input {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-bar.open .suggestions-dropdown {
+  display: block;
+}
+
+.search-bar.open .clear-button {
+  color: #666;
+}
+
+.suggestions-dropdown li:hover {
+  background-color: #f8f8f8;
+}

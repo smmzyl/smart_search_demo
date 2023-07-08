@@ -7,7 +7,7 @@
 - 没有匹配的建议词则无需显示下拉框  :white_check_mark: 
 - 点击建议词后可将建议词回填至输入框； :white_check_mark: 
 - 搜索建议词的数据源使用 JSON 文件： :white_check_mark: 
-- 点击右侧的 「x」按钮，可清除输入框内的文本并隐藏下拉框；
+- 点击右侧的 「x」按钮，可清除输入框内的文本并隐藏下拉框；:white_check_mark:
 - 可通过键盘的方向键在下拉框中选择（参考百度），按下回车将建议词回填至输入框； :white_check_mark: 
 - 可使用任意第三方框架和库；(未使用第三方库,采用react原生写法):black_square_button: 
 - 除以上提及的交互外，无需实现其它按钮的交互效果； :white_check_mark: 
